@@ -1,0 +1,333 @@
+@use 'base';
+$primary-light-blue: #5295fe;
+$icon-color: #D3D3D3;
+
+
+@mixin flex($property){
+    display: flex;
+    flex-direction: $property;
+    align-items: center;
+}
+
+
+
+  .search_block {
+      margin-top: 85px;
+      width: 340px;
+      margin-right: 25px;
+  }
+
+.search_block {
+
+    .search_list {
+        @include flex(row);
+        list-style-type: none;
+    
+    }
+    .search_form {
+
+        position: relative;
+        margin: 0 auto;
+        background: white;
+        width: 340px;
+        height: 120px;
+      }
+      
+    .search_input {
+        width: 295px;
+        height: 33px;
+        padding-left: 30px;
+        border-color:	$icon-color;
+        outline: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-left: 20px;
+
+    }
+
+    .search_icon {
+        height: 33px;
+        width: 33px;
+        position: absolute;
+        top: 0;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        margin-top: 20px;
+        color: $icon-color;
+        margin-left: 20px;
+
+    }
+    
+    .search_btn {
+        background-color: $primary-light-blue;
+        color: white;
+        border:none;
+        width: 295px;
+        height: 33px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    
+
+}
+ 
+  .users_cards_block {
+      width: 860px;
+  }
+  .search_link {
+    text-transform: uppercase;
+    margin-right: 15px;
+    font-size: 11px;
+    letter-spacing: 0.01rem;
+    font-family: Georgia;
+
+  }
+
+
+
+.users_cards_block {
+
+    .cards {
+        @include flex(row);
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-left: -5px;
+        margin-left: -5px;
+    }
+    .cards_item_wrapper {
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-top: 10px;
+        width: 33%;
+    }
+    .cards_item
+    {
+        @include flex(column);
+        background: white;
+        border-radius: 5px;
+
+        height: 276px;
+    }
+
+    .cards_avatar img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+    }
+
+    .cards_nameEN {
+        font-size: 20px;
+        letter-spacing: 0.04rem;
+        margin-top: 20px;
+    }
+    .cards_nameRU  {
+        color: darkgray;    
+        margin-top: 5px;
+    }
+    .cards_job {
+        margin-left: 5px; 
+        font-size: 14px;
+        letter-spacing: 0.01rem;
+    }
+    
+    .cards_description {
+        display: flex;
+        margin-top: 10px;
+    }
+    
+    .user_name {
+        @include flex(column)
+    }
+    .user_name a{
+        text-decoration: none;
+        color: black;
+    }
+    .work_content {
+        @include flex(row);
+        margin-right: 45px;
+
+     
+    }
+    .work_content i {
+        color: $primary-light-blue;
+    }
+    
+    .door_content {
+        @include flex(row);
+    }
+    .door_content i {
+        color: $primary-light-blue;
+    }
+    
+    .cards_room {
+        margin-left: 5px;
+        font-size: 14px;
+        letter-spacing: 0.01rem;
+    }
+    
+    hr {
+        width: 200px;
+        height: 1px;
+        border-width: 0;
+        background: lightgray;
+        margin-top: 30px;
+    }
+    .cards_avatar {
+        margin-top: 20px;
+    }
+    button {
+        border: none;
+        padding-right: 10px;
+        background-color: #f7f8fd;
+        outline: none;
+        font-size: 20px;
+        color: gray;
+    }
+}
+
+.display_items_list{ 
+    
+    .cards_item_wrapper{
+        flex-direction: row;
+        width: 100%;
+        height: 70px;
+        margin-bottom: 5px;
+    }
+    .cards_avatar img {
+        height: 50px;
+        width: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .cards_item {
+        @include flex(row);
+        justify-content: flex-start;
+        background: white;
+        border-radius: 5px;
+        height: 70px;
+        margin: 0px 5px;
+    }
+    #list_btn {
+        color:blue;
+    }
+    #block_btn {
+        color: gray;
+    }
+    .cards_nameEN {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    
+    .user_name {
+        margin-right: 80px;
+        width: 160px;
+    }
+    
+    .cards_nameRU {
+        font-size: 12px;
+    }
+    
+    .work_content i {
+        display: none;
+    } 
+    
+    .work_content {
+        margin-right: 170px;
+    }
+    .door_content i {
+        display: none;
+    }
+    .cards_job {
+        width: 110px;
+        text-align: center;
+    }
+    .user_name{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .cards_avatar {
+        margin-top: 5px;
+    }
+    button {
+        border: none;
+        padding-right: 10px;
+        background-color: #f7f8fd;
+        outline: none;
+        font-size: 20px;
+        color: gray;
+    }
+    .table_column {
+        display: initial;
+        @include flex(row);
+        background-color: white;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        height: 40px;
+        width: 820px;
+        border-radius: 5px;
+    }
+    
+}
+
+
+.display_items_list {
+    flex-direction: column;
+}
+
+.display_items_block {
+    flex-direction: row;
+}
+
+.users_cards_block {
+    margin-top: 85px;
+}
+
+.display_items {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+#block_btn {
+    color: blue;
+}
+
+
+
+.avatar_column {
+    display: flex;
+    margin-left: 10px;
+    font-size: 15px;
+    margin-right: 15px;
+
+}
+.table_column i {
+    color: #5295fe;
+    margin-right: 5px;
+}
+.name_column {
+    display: flex;
+    margin-right: 180px;    
+}
+.department_column {
+    display: flex;
+    margin-right: 150px;
+}
+.room_column{
+    display: flex;
+}
+
+.table_column {
+    display: none;
+}

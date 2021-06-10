@@ -1,0 +1,113 @@
+@use 'base';
+@mixin flex($property){
+    display: flex;
+    flex-direction: $property;
+    align-items: center;
+}
+
+
+.registration_block {
+    @include flex(column);
+    justify-content: center;
+    margin: 200px auto;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 30px;
+    width: 650px;
+    height: 400px;
+}
+.login_form {
+    @include flex(column);
+    justify-content: center;
+    margin: 200px auto;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 30px;
+    width: 650px;
+    height: 400px;
+}
+.sign_up {
+    @include flex(column);
+}
+
+.sign_up h1 {
+    color: #1753b3;
+    letter-spacing: 0.1rem;
+    margin-bottom: 15px;
+}
+
+.sign_up p {
+    font-size: 20px;
+}
+
+.icons_role {
+    display: flex;
+    margin-top: 17px;
+}
+
+.user_icon {
+    @include flex(column);
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.user_icon button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 11px;
+    outline: none;
+}
+.active{
+    color:blue;
+  
+}
+.disactive{
+    color:gray;
+
+}
+
+
+
+.editor_icon button{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 11px;
+    outline: none;
+}
+
+
+
+
+.editor_icon {
+    @include flex(column);
+}
+
+.input_block {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 85px;
+    justify-content: space-evenly;
+}
+
+.input_block input {
+    height: 27px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.sign_btn, .sign_btn_log {
+    margin-top: 10px;
+    height: 25px;
+    width: 65px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.login_block {
+    font-size: 13px;
+    margin-top: 10px;
+}

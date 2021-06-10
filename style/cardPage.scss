@@ -1,0 +1,120 @@
+
+@mixin flex($property){
+    display: flex;
+    flex-direction: $property;
+    align-items: center;
+}
+.user_card {
+    background-color: white;
+    margin-top: 74px;
+    display: flex;
+    height: 1160px;
+    margin-bottom: 30px;
+}
+
+.user_card {
+.user_avatar {
+    @include flex(column);
+    margin-top: 50px;
+    width: 300px;
+}
+.user_avatar img {
+    border-radius: 50%;
+    width: 180px;
+}
+.user_gender {
+    margin-top: 10px;
+    color: gray;
+    font-size: 15px;
+}
+.user_nameEn {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.user_nameRu {
+    margin-top: 7px;
+    color: gray;
+    font-size: 12px;
+}
+.user_desc {
+    display: flex;
+    margin-top: 10px;
+}
+.user_id{
+    margin-right: 20px;
+    background-color: lightgray;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+.business_card{
+    background-color: lightgray;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+.user_title {
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+.info_row {
+    display: flex;
+}
+.users {
+    width: 600px;
+}
+hr {
+    margin-bottom: 20px;
+}
+.info_row i {
+    color: rgb(54, 54, 228);
+    margin-right: 15px;
+    width: 20px;
+}
+.info_title_row {
+    width: 210px;
+    margin-right: 155px;
+    margin-bottom: 20px;
+}
+.users_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.edit_info {
+    background-color: rgb(198, 237, 248);
+    border: none;
+    padding: 5px 10px;
+    color: blue;
+}
+.user_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 200px;
+    align-items: flex-end;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    }
+    .info_title_row2 {
+        margin-left: 37px;
+        margin-bottom: 20px;
+        width: 210px;
+        margin-right: 155px;
+    }
+    .redirect_btn {
+        border-radius: 50%;
+        border: none;
+        width: 40px;
+        height: 40px;
+    }
+    .redirect_button {
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    .edit_info a {
+        text-decoration: none;
+    }
+}
